@@ -1,5 +1,10 @@
 .buttonsContainer {
+	margin-top: 20px;
+	>*:not(:last-child) {
+		margin-right: 10px;
+	}
 }
 
 .editableSpanContainer {
+
 }
