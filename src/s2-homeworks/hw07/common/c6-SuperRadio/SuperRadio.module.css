@@ -1,15 +1,54 @@
 .radio {
+	/* display: none; */
 }
 
-.radio::before {
-}
-
-
-.radio:checked::before {
-}
+/* .radio::before {
+} */
 
 .label {
+	display: block;
+	&:not(:last-child){
+		margin-bottom: 10px;
+	}
+	
+	.radio {
+		display: none;
+		&:checked{
+			~::after {
+				opacity: 1;
+			}
+		}
+	}
 }
 
-.options {
+.span {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	&::before {
+			content: '';
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			border: 2px solid #000;
+			border-radius: 50%;
+			box-sizing: border-box;
+			background-color: #fff;
+		}
+	
+		&::after {
+			content: '';
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			box-sizing: border-box;
+			background-color: #000;
+			position: absolute;
+			top: 50%;
+			left: 5px;
+			transform: translateY(-50%);
+			opacity: 0;
+		}
 }

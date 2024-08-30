@@ -30,7 +30,7 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
     {
         autoFocus,
         onBlur,
-        onEnter,
+        onEnter, //onSuperEditableSpanEnter
         spanProps,
 
         ...restProps // все остальные пропсы попадут в объект restProps
@@ -67,7 +67,7 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
                 <SuperInputText
                     autoFocus={autoFocus || true}
                     onBlur={onBlurCallback}
-                    onEnter={onEnterCallback}
+                    onEnter={onEnterCallback} //onSuperInputTextEnter
                     className={s.input}
                     {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
                 />
