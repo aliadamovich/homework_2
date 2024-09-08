@@ -308,3 +308,57 @@
 // console.log(orderA("4of Fo1r pe6ople g3ood th5e the2"));
 
 
+// function alphabetPosition(text) {
+// 	let newStr = ''
+// 	for (let i = 0; i < text.length; i ++) {
+
+// 		newStr += text.toLowerCase().charCodeAt(i) + " "
+// 	}
+// 	console.log(newStr);
+	
+// 	let arr = newStr.split(' ')
+// 	for (let i = 0; i < arr.length; i++) {
+// 		arr[i] -= 96
+// 	}
+
+// 	return arr.filter(l => l >= 1 && l <= 26).join(' ')
+// }
+
+
+
+// console.log(alphabetPosition(">|}av#>c"));
+
+// console.log(1)
+
+// setTimeout(() => {
+// 	console.log(2)
+// 	Promise.resolve().then(() => {
+// 		console.log(3)
+// 	})
+// })
+
+// new Promise((res, rej) => {
+// 	console.log(4)
+// 	res(5)
+// }).then(data => {
+// 	console.log(data)
+
+// 	Promise.resolve()
+// 		.then(() => {
+// 			console.log(6)
+// 		})
+// 		.then(() => {
+// 			console.log(7)
+
+// 			setTimeout(() => {
+// 				console.log(8)
+// 			}, 0)
+// 		})
+// })
+
+// setTimeout(() => {
+// 	console.log(9)
+// })
+
+// console.log(10)
+

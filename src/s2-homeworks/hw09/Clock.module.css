@@ -1,14 +1,27 @@
 .buttonsContainer {
+	margin-top: 25px;
+	>*:not(:last-child) {
+		margin-right: 21px;
+	}
 }
 
 .clock {
 }
 
 .watch {
+	font-family: Montserrat;
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 8px;
 }
 
 .watch strong {
+	font-weight: 600;
 }
 
 .more {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
 }
