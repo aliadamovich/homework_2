@@ -1,3 +1,24 @@
 .loader {
-    /*свг и/или анимация*/
+	width: 108px;
+	height: 108px;
+	background: url('./svg/Loading.png') center no-repeat;
+	animation: loadingAnim 2s linear infinite 0s;
+}
+
+@keyframes loadingAnim {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+	transform: rotate(90deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	75% {
+		transform: rotate(270deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
