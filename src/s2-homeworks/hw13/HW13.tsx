@@ -47,7 +47,7 @@ const HW13 = () => {
 								setInfo(res.data.info)
             })
             .catch((e) => {
-							if (e.response.status >= 400 || e.response.status <= 500) {
+							if (e.response.status === 400 || e.response.status === 500) {
 								handleServerError(e, e.response.status)
 							}
 							else {

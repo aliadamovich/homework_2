@@ -1,7 +1,12 @@
-.tech {
 
+.tech {
+	&:not(:last-child){
+		margin-bottom: 3px;
+	}
 }
 
 .loading {
-
+	color: #4D4D4D;
+	font-size: 14px;
+	margin-left: 310px;
 }
