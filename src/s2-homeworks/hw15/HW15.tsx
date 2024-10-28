@@ -69,8 +69,8 @@ const HW15 = () => {
         setCount(newCount)
 				// console.log(count);
 
-				sendQuery({ page: newPage, count: newCount })
-			setSearchParams({ page: String(newPage), count: String(newCount) })
+			sendQuery({ page: newPage, count: newCount, sort: sort })
+			setSearchParams({ sort: sort , page: String(newPage), count: String(newCount) })
 
         //
     }
@@ -79,11 +79,10 @@ const HW15 = () => {
         // делает студент
 
         setSort(newSort)
-				console.log(sort);
         setPage(1) // при сортировке сбрасывать на 1 страницу
 
 			sendQuery({ sort: newSort, page: page, count: count })
-			setSearchParams({sort: String(newSort), page: String(page), count: String(count) })
+			setSearchParams({sort: newSort, page: String(page), count: String(count) })
 
         //
     }
@@ -112,8 +111,9 @@ const HW15 = () => {
 			<div id={'hw15'}>
             <div className={s2.hwTitle}>Homework #15</div>
 
-            <div className={`${s2.hw} ${s.hwMain}`}>
-                {idLoading && <div id={'hw15-loading'} className={s.loading}><Loader/></div>}
+            {/* <div className={`${s2.hw} ${s.hwMain}`}> */}
+            <div className={s2.hw}>
+                {idLoading && <div id={'hw15-loading'} className={s.loading}>Loading...</div>}
 
                 <SuperPagination
                     page={page}
